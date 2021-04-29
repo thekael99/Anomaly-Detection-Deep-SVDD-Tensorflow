@@ -1,7 +1,10 @@
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
+
 from dsvdd import *
 import matplotlib.pyplot as plt
 import os
-import tensorflow as tf
+
 from sklearn.metrics import roc_auc_score
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '5'
